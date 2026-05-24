@@ -1,0 +1,90 @@
+/* BODY */
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  background-color: #2c5d63;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* NAVIGATION */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration:none;
+  font-size: 18px;
+}
+
+/* LINK HOVER */
+nav a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+main {
+  margin: 20px;
+  font-size: 18px;
+}
+
+/* PARAGRAPHS */
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* IMAGE */
+img {
+ div {
+  display: flex;
+  flex-wrap: wrap;      /* allows images to go to next line */
+  gap: 10px;            /* space between images */
+  justify-content: center;
+}
+
+/* Make all images same size */
+div img {
+  width: 120px;
+  height: auto;
+}
+
+}
+
+/* IMAGE HOVER */
+img:hover {
+  border-color: black;
+}
+
+/* LINKS IN TEXT */
+main a {
+  color: blue;
+}
+
+/* HOVER FOR TEXT LINKS */
+main a:hover {
+  color: red;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
