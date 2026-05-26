@@ -23,8 +23,8 @@ h1 {
 }
 header img {
   width: 150px;
-  height: auto;
-  justify-self:center; /* pushes image to right neatly */
+  display: block;
+  margin: 0 auto;
   border-radius: 100px;
 }
 
