@@ -14,20 +14,35 @@ header {
 }
 
 /* NAVIGATION */
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
 }
 
+/* Commented out existing li styling */
+/*
 nav li {
   display: inline;
   margin: 10px;
 }
+*/
 
 nav a {
   color: white;
-  text-decoration:none;
+  text-decoration: none;
   font-size: 18px;
+}
+
+/* NAV IMAGE ONLY */
+nav img {
+  width: 10%;
+  position: relative;
+  top: 20px;
 }
 
 /* LINK HOVER */
@@ -48,21 +63,25 @@ p {
   margin-bottom: 15px;
 }
 
-/* IMAGE */
-img {
- div {
+/* GRID CLASS */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* GRID IMAGES ONLY */
+.grid img {
+  width: 100%;
+}
+
+/* FLEX CLASS */
+.flex {
   display: flex;
-  flex-wrap: wrap;      /* allows images to go to next line */
-  gap: 10px;            /* space between images */
-  justify-content: center;
-}
-
-/* Make all images same size */
-div img {
-  width: 120px;
-  height: auto;
-}
-
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* IMAGE HOVER */
