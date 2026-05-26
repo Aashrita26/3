@@ -24,7 +24,7 @@ nav ul {
   padding: 0;
 }
 
-/* Commented out existing li styling */
+/*  OLD LI STYLE  */
 /*
 nav li {
   display: inline;
@@ -32,13 +32,18 @@ nav li {
 }
 */
 
+nav li {
+  display: inline-block;
+  margin: 10px;
+}
+
 nav a {
   color: white;
-  text-decoration: none;
+  text-decoration:none;
   font-size: 18px;
 }
 
-/* NAV IMAGE ONLY */
+/* NAV IMAGE */
 nav img {
   width: 10%;
   position: relative;
@@ -63,30 +68,42 @@ p {
   margin-bottom: 15px;
 }
 
-/* GRID CLASS */
+/* ✅ FIXED IMAGE RULE */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ✅ GRID LAYOUT */
 .grid {
   display: grid;
   grid-template-columns: 40% 40%;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: start;
   row-gap: 20px;
 }
 
-/* GRID IMAGES ONLY */
+/* ONLY images inside grid */
 .grid img {
   width: 100%;
 }
 
-/* FLEX CLASS */
+/* ✅ FLEX LAYOUT */
 .flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* FLEX images */
+.flex img {
+  width: 120px;
 }
 
 /* IMAGE HOVER */
 img:hover {
-  border-color: black;
+  border: 2px solid black;
 }
 
 /* LINKS IN TEXT */
@@ -94,7 +111,6 @@ main a {
   color: blue;
 }
 
-/* HOVER FOR TEXT LINKS */
 main a:hover {
   color: red;
 }
