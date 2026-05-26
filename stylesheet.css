@@ -25,7 +25,7 @@ header img {
   width: 150px;
   height: auto;
   justify-self: end; /* pushes image to right neatly */
-  border-radius: 60px;
+  border-radius: 100px;
 }
 
   display: flex;
