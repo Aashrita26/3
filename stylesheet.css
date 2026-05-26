@@ -24,7 +24,7 @@ h1 {
 header img {
   width: 150px;
   height: auto;
-  justify-self: end; /* pushes image to right neatly */
+  justify-self:center; /* pushes image to right neatly */
   border-radius: 100px;
 }
 
