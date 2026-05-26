@@ -11,6 +11,23 @@ header {
   color: white;
   padding: 20px;
 
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 42px;
+  margin: 20px 0 0 0;
+}
+header img {
+  width: 150px;
+  height: auto;
+  justify-self: end; /* pushes image to right neatly */
+  border-radius: 10px;
+}
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,17 +38,29 @@ h1 {
 }
 
 /* NAVIGATION */
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+
+ nav {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
 }
+
+nav li {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
 
 /*  OLD LI STYLE  */
 /*
@@ -40,17 +69,6 @@ nav li {
   margin: 10px;
 }
 */
-
-nav li {
-  display: inline-block;
-  margin: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration:none;
-  font-size: 18px;
-}
 
 /* NAV IMAGE */
 nav img {
@@ -67,16 +85,18 @@ nav a:hover {
 
 /* MAIN CONTENT */
 main {
-  margin: 40px auto;
-  width: 80%;
-  font-size: 18px;
+  background-color: rgb(44, 93, 99);
+  padding: 20px;
+  width: 90%;
+  margin: 20px auto;
 }
+
 ``
 
 /* PARAGRAPHS */
 p {
+  font-size: 20px;
   line-height: 1.6;
-  margin-bottom: 15px;
 }
 
 /* ✅ FIXED IMAGE RULE */
@@ -128,9 +148,8 @@ main a:hover {
 
 /* FOOTER */
 footer {
-  background-color: #333;
+  background-color: #444;
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: 20px;
-}
+};
